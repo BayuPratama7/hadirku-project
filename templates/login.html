@@ -3,7 +3,11 @@
     <div class="col-md-6 col-lg-4">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title text-center mb-4">Login</h3>
+                <!-- Logo -->
+                <div class="text-center mb-4" style="max-width: 200px; margin: 0 auto;">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo Hadirku" class="img-fluid">
+                </div>
+                <h3 class="card-title text-center mb-4">Masuk Hadirku</h3>
                 <form method="POST" action="/login">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nama Lengkap</label>
