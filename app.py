@@ -57,11 +57,7 @@ def create_app():
 
     return app
 
-# Create app instance for gunicorn
-app = create_app()
-
 if __name__ == '__main__':
-    # Konfigurasi untuk Railway hosting
-    port = int(os.environ.get('PORT', 5000))
-    app.run(debug=False, host='0.0.0.0', port=port)
+    app = create_app()
+    app.run(debug=True, host='0.0.0.0', port=5000)
 
