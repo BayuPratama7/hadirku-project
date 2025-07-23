@@ -58,7 +58,3 @@ static/captures/*
 # Environment variables
 .env.local
 .env.production
-
-# Replit specific
-.replit
-replit.nix
